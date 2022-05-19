@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3976881193413941153}
   - component: {fileID: 3976881193413941152}
   - component: {fileID: 3976881193413941159}
+  - component: {fileID: 4405847808698406720}
+  - component: {fileID: 3182008245211251765}
   m_Layer: 0
   m_Name: cerberus-red
   m_TagString: Untagged
@@ -165,3 +167,31 @@ MonoBehaviour:
   - {x: -4, y: -3.38}
   - {x: -1, y: -3.38}
   stopDistance: 0.2
+--- !u!114 &4405847808698406720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3976881193413941158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bfa7773b2ff2404eae7eef62cd1aef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceStrength: 5
+  target: {fileID: 0}
+--- !u!114 &3182008245211251765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3976881193413941158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded52a0274be9cf468072241c39df0fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceForDecision: 3
+  target: {fileID: 0}
