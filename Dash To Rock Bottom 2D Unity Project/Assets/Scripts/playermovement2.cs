@@ -39,6 +39,7 @@ public class playermovement2 : MonoBehaviour
 
     }
 
+    //If the player is crouched, the player cannot jump
     void FixedUpdate ()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
