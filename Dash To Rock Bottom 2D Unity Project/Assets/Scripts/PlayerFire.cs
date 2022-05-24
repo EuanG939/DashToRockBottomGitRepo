@@ -6,10 +6,11 @@ public class PlayerFire : MonoBehaviour
 {
     //Unity editor variables
     public GameObject projectilePrefab;
+    public GameObject ProjectileExit;
     public Vector2 projectileVelocity;
     public float delay;
     private float startTime;
-
+    
 
     //Action - Fire a projectile
     public void FireProjectile()

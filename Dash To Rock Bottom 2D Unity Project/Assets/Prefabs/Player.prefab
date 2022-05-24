@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91139e8b527cfb444886a0289f957329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 2324850384161012443, guid: 0094bbbac92eaa64b93cf0be26c880db, type: 3}
   projectileVelocity: {x: 10, y: 0}
   delay: 3
 --- !u!1 &2959733055869384438
