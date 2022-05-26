@@ -18,6 +18,20 @@ public class playermovement2 : MonoBehaviour
 
         //HorizontalMove is for getting left and right inputs which in this case is the keys 'A' and 'D'
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        
+       
+
+        //get rigidbody that is needed for physics info
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        //find out from rigidbody what the current horizontal speed is
+        float currentSpeedH = ourRigidbody.velocity.x;
+
+        //get animator component that is goimg to be used for setting the animations
+        Animator ourAnimator = GetComponent<Animator>();
+
+        //Tell animator what the speed is
+        ourAnimator.SetFloat("speedH", currentSpeedH);
 
         //Used for getting the jump function, which is the 'Space' key
         if (Input.GetButtonDown("Jump"))

@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 10
   gameOverScene: 
+  shouldReset: 1
 --- !u!114 &2959733054557998457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 2324850384161012443, guid: 0094bbbac92eaa64b93cf0be26c880db, type: 3}
+  ProjectileExit: {fileID: 0}
   projectileVelocity: {x: 10, y: 0}
   delay: 3
 --- !u!1 &2959733055869384438

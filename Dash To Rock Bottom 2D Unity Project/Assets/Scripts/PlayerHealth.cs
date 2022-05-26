@@ -10,10 +10,13 @@ public class PlayerHealth : MonoBehaviour
     //int = whole number
     public int startingHealth;
     public string gameOverScene;
+    public bool shouldReset = false;
 
-    //This will be the player's current health
-    //Changes as the game goes on
-    int currentHealth;
+  
+
+        //This will be the player's current health
+        //Changes as the game goes on
+        int currentHealth;
 
     //Built in Unity function called when the script is created
     //Usually when the game starts
@@ -22,7 +25,12 @@ public class PlayerHealth : MonoBehaviour
     {
         //Initialise our current health to be equal to our starting health 
         //at the beginning of the game
-        currentHealth = startingHealth;
+        if (shouldReset == true)
+        {
+            //reset health back to 0
+            currentHealth = startingHealth;
+        }
+        
     }
 
     //not built into Unity
