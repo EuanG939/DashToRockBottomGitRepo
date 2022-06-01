@@ -2289,6 +2289,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.011571899
       objectReference: {fileID: 0}
+    - target: {fileID: -7996867332433343531, guid: d73e73d630a590346870c448dd9a2b2b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5201542383561178258, guid: d73e73d630a590346870c448dd9a2b2b, type: 3}
+      propertyPath: hazardDamage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3294449169312155643, guid: d73e73d630a590346870c448dd9a2b2b, type: 3}
       propertyPath: player
       value: 
