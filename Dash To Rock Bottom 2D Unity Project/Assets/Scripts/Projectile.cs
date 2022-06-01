@@ -16,7 +16,10 @@ public class Projectile : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
-   void OnTriggerEnter2D (Collider2D hitInfo)
+  
+    //This detects if the projectile has hit the enemy by comparing its tag
+    //it then applies damage until it kills the enemy
+    void OnTriggerEnter2D (Collider2D hitInfo)
     {
         if (hitInfo.CompareTag("Enemy")) {
             EnemyHP enemy = hitInfo.GetComponent<EnemyHP>();
@@ -26,6 +29,9 @@ public class Projectile : MonoBehaviour
             }
             Destroy(gameObject);
         }
+
+        //This detects if the projectile has hit the boss by comparing its tag
+        //it then applies damage until it kills the boss
 
         if (hitInfo.CompareTag("Boss"))
         {
