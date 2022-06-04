@@ -1,12 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScorePickup : MonoBehaviour
+public class ScorePickup2 : MonoBehaviour
 {
     //public variable
     public int pickupValue = 1;
-    
+    public GameObject Pickup2;
 
     //called by unity when this object overlaps
     void OnTriggerEnter2D(Collider2D other)
@@ -22,14 +22,21 @@ public class ScorePickup : MonoBehaviour
             //we should then delete this object so we don't infinitely add score
             Destroy(gameObject);
 
-          
-            
-            
-           
+
+            PickupControl.control.Pickup2state = 0;
+
+
+
         }
     }
 
 
-   
+    void Update()
+    {
+        if (PickupControl.control.Pickup2state == 0)
+        {
+            Destroy(Pickup2);
+        }
+    }
 
 }

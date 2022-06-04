@@ -9,6 +9,7 @@ TagManager:
   - NoGun
   - Boss
   - SolidWall
+  - Pickup1
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3493645069497411069}
   - component: {fileID: -2759394607370393020}
   m_Layer: 0
-  m_Name: skull-green
+  m_Name: FlyingSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
