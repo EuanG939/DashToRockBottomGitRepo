@@ -44,5 +44,12 @@ public class Projectile : MonoBehaviour
         }
 
 
+        if (hitInfo.CompareTag("SolidWall"))
+        {
+            Destroy(gameObject);
+        }
+
+
+
     }
 }

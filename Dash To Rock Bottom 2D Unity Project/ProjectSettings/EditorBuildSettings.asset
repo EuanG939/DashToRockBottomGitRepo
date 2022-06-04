@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossArena.unity
     guid: b97da765bcc578e41ba2575b5bb1b88b
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 93478c1a50b2f5d47a26c242196aa767
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: a9863dcd7c5d634479ea6f55d601aa4c
   m_configObjects: {}

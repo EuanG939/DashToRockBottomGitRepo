@@ -8,6 +8,7 @@ TagManager:
   - SolidWalls
   - NoGun
   - Boss
+  - SolidWall
   layers:
   - Default
   - TransparentFX
