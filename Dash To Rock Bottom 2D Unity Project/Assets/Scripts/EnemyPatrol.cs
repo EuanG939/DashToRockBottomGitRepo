@@ -32,7 +32,7 @@ public class EnemyPatrol : MonoBehaviour
             //if we've gone past the end of our list
             if (currentPoint >=patrolPoints.Length)
             {
-                //then loop back to thr start, by setting current index to 0
+                //then loop back to the start, by setting current index to 0
                 currentPoint = 0;
             }
 

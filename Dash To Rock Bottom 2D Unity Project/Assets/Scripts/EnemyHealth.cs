@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
     public int startingHealth;
     public string gameOverScene;
 
-    //This will be the player's current health
+    //This will be the enemy's current health
     //Changes as the game goes on
     int currentHealth;
 
@@ -26,7 +26,7 @@ public class EnemyHealth : MonoBehaviour
 
     //not built into Unity
     //must call it ourselves
-    //changes player's current health and Kill() them if they have 0 health or less
+    //changes enemy's current health and Kill() them if they have 0 health or less
     //public so other scripts can access it
     public void ChangeHealth(int changeAmount)
     {
@@ -36,10 +36,10 @@ public class EnemyHealth : MonoBehaviour
         //keep our current health between 0 and starting health value
         currentHealth = Mathf.Clamp(currentHealth, 0, startingHealth);
 
-        //if health drops to 0, means the player should die
+        //if health drops to 0, means the enemy should die
         if (currentHealth <= 0)
         {
-            //call kill function to kill player
+            //call kill function to kill enemy
             Kill();
         }
     }

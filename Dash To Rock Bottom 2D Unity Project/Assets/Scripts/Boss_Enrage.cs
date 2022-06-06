@@ -7,6 +7,7 @@ public class Boss_Enrage : StateMachineBehaviour
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
+		//Make the boss invulnerable from damage when it is transforming to its enraged state.
 		animator.GetComponent<BossHP>().isInvulnerable = true;
 	}
 
@@ -19,6 +20,7 @@ public class Boss_Enrage : StateMachineBehaviour
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
+		//Turn off invulnerablility for the boss when it has become enraged
 		animator.GetComponent<BossHP>().isInvulnerable = false;
 	}
 }

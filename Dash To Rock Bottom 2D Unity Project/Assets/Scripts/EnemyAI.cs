@@ -5,7 +5,7 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
-
+    //Variables to define the targetm the AI's speed and their next waypoint distance
     public Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
@@ -23,6 +23,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       //This starts off by getting the Seek script and updating the AI's waypoint path accordingly
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -32,12 +33,14 @@ public class EnemyAI : MonoBehaviour
 
     void UpdatePath()
     {
+        //Once it reaches the end of the path, stay there
         if (seeker.IsDone())
         seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
     void OnPathComplete(Path p)
     {
+        //If there is a path that exists, and no error is found, complete the path
         if (!p.error)
         {
             path = p;
@@ -49,9 +52,11 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+       //If there is no path, don't do anything
         if (path == null)
             return;
 
+        //Check to see if the current waypoint is the end of the path or not, and continue accordingly
         if(currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
@@ -61,6 +66,7 @@ public class EnemyAI : MonoBehaviour
             reachedEndOfPath = false;
         }
 
+        //Move the AI along the path at its set speed
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
 
@@ -68,6 +74,7 @@ public class EnemyAI : MonoBehaviour
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
+        //Check to see if the current distance to the next waypoint is less than the set value of 3, if so, move to next waypoint
         if (distance < nextWaypointDistance)
         {
             currentWaypoint++;

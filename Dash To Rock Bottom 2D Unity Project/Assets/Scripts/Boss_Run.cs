@@ -5,6 +5,8 @@ using UnityEngine;
 public class Boss_Run : StateMachineBehaviour
 {
 
+	//Variables to define the boss's speed and attack range
+	
 	public float speed = 2.5f;
 	public float attackRange = 3f;
 
@@ -24,6 +26,8 @@ public class Boss_Run : StateMachineBehaviour
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
+		//This makes the boss always rotate towards the player no matter where they are
+		
 		boss.LookAtPlayer();
 
 		Vector2 target = new Vector2(player.position.x, rb.position.y);
@@ -39,6 +43,7 @@ public class Boss_Run : StateMachineBehaviour
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
+		//Ensures the boss doesn't permanently stay attacking, and goes back to its normal movement when the player is out of range
 		animator.ResetTrigger("Attack");
 	}
 }

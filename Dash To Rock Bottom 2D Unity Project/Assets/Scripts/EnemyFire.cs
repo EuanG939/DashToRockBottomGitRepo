@@ -30,7 +30,7 @@ public class EnemyFire : MonoBehaviour
         //Use instantiate to clone the project and keep the result in our variable
         clonedProjectile = Instantiate(projectilePrefab);
 
-        //Position the projectile on the player
+        //Position the projectile on the enemy
         clonedProjectile.transform.position = transform.position;
 
         //Declare a variable to hold the cloned object's rigidbody

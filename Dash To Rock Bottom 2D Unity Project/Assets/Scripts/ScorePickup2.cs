@@ -22,7 +22,7 @@ public class ScorePickup2 : MonoBehaviour
             //we should then delete this object so we don't infinitely add score
             Destroy(gameObject);
 
-
+            //Change the pickup control state to 0, so that the item doesnt respawn upon a scene loading
             PickupControl.control.Pickup2state = 0;
 
 
@@ -35,6 +35,7 @@ public class ScorePickup2 : MonoBehaviour
     {
         if (PickupControl.control.Pickup2state == 0)
         {
+           //Destory the pickup for the remainder of the game
             Destroy(Pickup2);
         }
     }

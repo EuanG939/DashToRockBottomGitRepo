@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-
+    //Variables to define the weapon's fire point and the prefab for the projectile
     public Transform firePoint;
     public GameObject projectilePrefab;
 
     // Update is called once per frame
     void Update()
     {
+       //If the player presses the 'K' key, they will shoot
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();

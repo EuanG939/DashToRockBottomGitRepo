@@ -44,7 +44,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
 
-
+        //This detects if the projectile has hit a solid wall that it cannot pass through, if so destory the projectile
         if (hitInfo.CompareTag("SolidWall"))
         {
             Destroy(gameObject);
