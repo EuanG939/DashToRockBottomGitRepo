@@ -8,14 +8,16 @@ public class Score : MonoBehaviour
     //public variable
     public Text scoreDisplay;
     public bool shouldReset = false;
-    
+   
+
     //private variables
     private static int scoreValue = 0;
 
 
     void Start()
     {
-       if (shouldReset == true)
+        
+        if (shouldReset == true)
         {
             //reset score back to 0
             scoreValue = 0;
@@ -36,5 +38,7 @@ public class Score : MonoBehaviour
 
         //update display of score based on numerical value
         scoreDisplay.text = scoreValue.ToString();
+
+        
     }
 }

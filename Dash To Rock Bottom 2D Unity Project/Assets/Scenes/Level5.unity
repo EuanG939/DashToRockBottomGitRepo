@@ -1349,6 +1349,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5316258690910588028, guid: 2e18c979610cc5349a3b631d04bf6b43, type: 3}
+      propertyPath: shouldReset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316258690910588028, guid: 2e18c979610cc5349a3b631d04bf6b43, type: 3}
       propertyPath: scoreDisplay
       value: 
       objectReference: {fileID: 1266311779}

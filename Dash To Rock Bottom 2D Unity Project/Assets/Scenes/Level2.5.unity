@@ -1740,6 +1740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 1102106475}
   shouldReset: 0
+  highscore: {fileID: 0}
 --- !u!114 &1102106475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5529,28 +5530,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9117058458694826281, guid: 3c7e8bc9a3616aa44a581c46d8508bba, type: 3}
   m_PrefabInstance: {fileID: 1825329606}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1913453279 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3976881193413941158, guid: 20ce05caca8be794986e044d15239067, type: 3}
-  m_PrefabInstance: {fileID: 104101974}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1913453280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913453279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c584a2ff1d7fa9d48b323610fde626d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 2324850384161012443, guid: 0094bbbac92eaa64b93cf0be26c880db, type: 3}
-  projectileVelocity: {x: 10, y: 0}
-  delay: 0
-  distanceForDecision: 2
-  target: {fileID: 0}
 --- !u!1 &1930736159
 GameObject:
   m_ObjectHideFlags: 0
