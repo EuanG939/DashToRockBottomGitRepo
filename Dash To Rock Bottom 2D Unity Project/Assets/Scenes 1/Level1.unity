@@ -1673,7 +1673,7 @@ SpriteRenderer:
   m_Size: {x: 0.8, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &131500872
@@ -1776,6 +1776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 10
   gameOverScene: 
+  shouldReset: 0
 --- !u!1 &329675869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,7 +2594,7 @@ SpriteRenderer:
   m_Size: {x: 0.8, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &528888012
@@ -3042,7 +3043,7 @@ SpriteRenderer:
   m_Size: {x: 0.8, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1163732670
@@ -3569,7 +3570,7 @@ SpriteRenderer:
   m_Size: {x: 0.8, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1887527755
