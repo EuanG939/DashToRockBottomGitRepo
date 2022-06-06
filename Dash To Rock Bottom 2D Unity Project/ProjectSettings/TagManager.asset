@@ -10,6 +10,7 @@ TagManager:
   - Boss
   - SolidWall
   - Pickup1
+  - Winning
   layers:
   - Default
   - TransparentFX

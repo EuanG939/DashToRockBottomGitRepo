@@ -8,6 +8,14 @@ public class BossHP : MonoBehaviour
 
     public bool isInvulnerable = false;
 
+    public GameObject winningTrigger;
+
+    void Start()
+    {
+        winningTrigger.SetActive(false);
+    }
+    
+    
     public void TakeDamage(int damage)
     {
         if (isInvulnerable)
@@ -30,5 +38,6 @@ public class BossHP : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        winningTrigger.SetActive(true);
     }
 }

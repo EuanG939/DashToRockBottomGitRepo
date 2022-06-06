@@ -61,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
     {
         //This will destroy the gameobject that this script is attached to
         Destroy(gameObject);
-
+        SceneManager.LoadScene(gameOverScene);
      
     }
 

@@ -14,6 +14,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         rb.velocity = transform.right * speed;
+        FindObjectOfType<AudioManager>().Play("Weapon Shoot");
     }
 
   
